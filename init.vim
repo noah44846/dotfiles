@@ -43,10 +43,6 @@ call plug#begin("~/.config/nvim/plugged")
     Plug 'ryanoasis/vim-devicons'
 call plug#end()
 
-"global config
-nnoremap <Leader>+ :vertical resize +5<CR>
-nnoremap <Leader>- :vertical resize -5<CR>
-
 "theme : gruvbox & lualine
 colorscheme gruvbox
 set background=dark
