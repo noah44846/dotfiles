@@ -37,7 +37,7 @@ call plug#begin("~/.config/nvim/plugged")
     Plug 'mbbill/undotree'
     
     "theme
-	Plug 'gruvbox-community/gruvbox'
+    Plug 'gruvbox-community/gruvbox'
     Plug 'hoob3rt/lualine.nvim'
     Plug 'kyazdani42/nvim-web-devicons'
     Plug 'ryanoasis/vim-devicons'
