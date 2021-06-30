@@ -16,6 +16,8 @@ set incsearch
 set termguicolors
 set scrolloff=8
 set signcolumn=yes
+set splitbelow
+set splitright
 
 let mapleader = " "
 
@@ -43,6 +45,18 @@ call plug#begin("~/.config/nvim/plugged")
     Plug 'ryanoasis/vim-devicons'
 call plug#end()
 
+"global remaps
+tnoremap <Esc> <C-\><C-n>
+nnoremap <leader>+ :vertical resize +5<CR>
+nnoremap <leader>- :vertical resize -5<CR>
+nnoremap <C-J> <C-W><C-J>
+nnoremap <C-K> <C-W><C-K>
+nnoremap <C-L> <C-W><C-L>
+nnoremap <C-H> <C-W><C-H>
+nnoremap <leader>bn :bn<CR>
+nnoremap <leader>bp :b#<CR>
+nnoremap <leader>t :10sp<bar>te<CR>
+
 "theme : gruvbox & lualine
 colorscheme gruvbox
 set background=dark
@@ -55,9 +69,6 @@ nnoremap <C-p> :lua require('telescope.builtin').git_files()<CR>
 
 "git
 nnoremap <leader>ga :Git fetch --all<CR>
-
-nmap <leader>gh :diffget //3<CR>
-nmap <leader>gu :diffget //2<CR>
 nmap <leader>gs :G<CR>
 
 "lsp & treesitter
