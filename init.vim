@@ -68,8 +68,11 @@ nnoremap <leader>ps :lua require('telescope.builtin').grep_string({ search = vim
 nnoremap <C-p> :lua require('telescope.builtin').git_files()<CR>
 
 "git
-nnoremap <leader>ga :Git fetch --all<CR>
-nmap <leader>gs :G<CR>
+nnoremap <leader>gf :G fetch --all<CR>
+nnoremap <leader>gs :G<CR>
+nnoremap <leader>ga :G add .<CR>
+nnoremap <leader>gc :G commit<CR>
+nnoremap <leader>gp :G push<CR>
 
 "lsp & treesitter
 set completeopt=menuone,noinsert,noselect
