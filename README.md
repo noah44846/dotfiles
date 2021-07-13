@@ -1,2 +1,4 @@
-# vimconfig
-My personal vim config
+# dotfiles
+My personal config for :
+* vim
+* tmux
