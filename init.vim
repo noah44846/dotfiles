@@ -30,9 +30,7 @@ call plug#begin("~/.config/nvim/plugged")
     Plug 'hrsh7th/cmp-path'
     Plug 'hrsh7th/cmp-cmdline'
     Plug 'hrsh7th/nvim-cmp'
-
     Plug 'L3MON4D3/LuaSnip'
-    Plug 'rust-lang/rust.vim'
 
     "git & search tools
     Plug 'tpope/vim-fugitive'
