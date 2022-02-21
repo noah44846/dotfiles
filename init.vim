@@ -19,6 +19,9 @@ set signcolumn=yes
 set splitbelow
 set splitright
 
+highlight ColorColumn ctermbg=gray
+set colorcolumn=80
+
 let mapleader = " "
 
 call plug#begin("~/.config/nvim/plugged")
@@ -113,7 +116,7 @@ cmp.setup({
 local capabilities = require('cmp_nvim_lsp').update_capabilities(vim.lsp.protocol.make_client_capabilities())
 local nvim_lsp = require('lspconfig')
 -- Use a loop to conveniently call 'setup' on multiple servers
-local servers = { "pyright", "rust_analyzer", "tsserver" }
+local servers = { "pyright", "rust_analyzer", "tsserver", "ltex" }
 for _, lsp in ipairs(servers) do
   nvim_lsp[lsp].setup { capabilities = capabilities }
 end
